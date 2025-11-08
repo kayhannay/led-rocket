@@ -138,14 +138,14 @@ fn rotate(led: &mut SmartLedsAdapter<'_, LED_BUFFER_SIZE>) -> () {
     let mut leds: [RGB8; NUM_LEDS] = [RGB8::default(); NUM_LEDS];
 
     let colors: [RGB<u8>; NUM_LEDS_ROUND] = [
-        RGB8::new(255, 0, 0),
-        RGB8::new(0, 255, 0),
-        RGB8::new(0, 0, 255),
-        RGB8::new(255, 255, 0),
-        RGB8::new(255, 0, 255),
-        RGB8::new(0, 255, 255),
-        RGB8::new(0, 0, 0),
-        RGB8::new(0, 0, 0),
+        RGB8::new(128, 0, 0),
+        RGB8::new(0, 128, 0),
+        RGB8::new(0, 0, 128),
+        RGB8::new(128, 128, 0),
+        RGB8::new(128, 0, 128),
+        RGB8::new(0, 128, 128),
+        RGB8::new(128, 64, 0),
+        RGB8::new(64, 128, 64),
     ];
 
     let mut loop_counter = 0;
